@@ -6,3 +6,7 @@
 
 # Важно
 Наименование файла строго filtered_logs, формата .txt
+Все ошибки и проблемы пишутся в error.txt
+
+# Источник для поддержки (по необходимости)
+https://github.com/IvanMenshikh/TxtToExcel

@@ -2,6 +2,7 @@ package infra
 
 import (
 	"fmt"
+	"strings"
 
 	"github.com/xuri/excelize/v2"
 )
@@ -107,8 +108,10 @@ func (w *ExcelWriter) Write(data [][]string) error {
 	// Записываем данные
 	for row, record := range data {
 		for col, val := range record {
+			// заменяем спецсимвол "##" на пробел
+			cleanVal := strings.ReplaceAll(val, "##", " ")
 			cell, _ := excelize.CoordinatesToCellName(col+1, row+2)
-			f.SetCellValue(sheet, cell, val)
+			f.SetCellValue(sheet, cell, cleanVal)
 		}
 	}
 
