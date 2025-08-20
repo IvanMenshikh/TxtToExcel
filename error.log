@@ -1,0 +1,2 @@
+ERROR: 2025/08/19 15:24:41 main.go:36: ошибка чтения: open C:\Users\Admin-PC\Desktop\Учеба\Самостоятельное обучение\GO LANG\txt-to-excel\filtered_logs.txt: The system cannot find the file specified.
+ERROR: 2025/08/20 14:35:04 main.go:36: ошибка записи: open C:\Users\Admin-PC\Desktop\Учеба\Самостоятельное обучение\GO LANG\txt-to-excel\result.xlsx: The process cannot access the file because it is being used by another process.
